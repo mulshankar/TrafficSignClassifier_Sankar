@@ -1,5 +1,3 @@
-#**Traffic Sign Recognition** 
-
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
@@ -13,9 +11,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/TrainDataVisualization.jpg "Visualization"
-[image2]: ./examples/lenet.jpg "LeNet Architecture"
-[image3]: ./examples/TrainVal_LossAccuracy.jpg "Training & Validation Loss/Accuracy"
+[image1]: ./examples/TrainDataVisualization.png "Visualization"
+[image2]: ./examples/lenet.png "LeNet Architecture"
+[image3]: ./examples/TrainVal_LossAccuracy.png "Training & Validation Loss/Accuracy"
 [image4]: ./examples/Augmentation.png "Augmentation Output"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
@@ -26,7 +24,7 @@ The goals / steps of this project are the following:
 
 Here is a link to the [project code](https://github.com/mulshankar/TrafficSignClassifier_Sankar.git)
 
-** Data Set Summary
+**Data Set Summary**
 
 The dataset used for this work is the German Traffic Dataset located here: http://benchmark.ini.rub.de/
 
@@ -42,13 +40,13 @@ Training Set:   34799 samples
 Validation Set: 4410 samples
 Test Set:       12630 samples
 
-** Exploratory visualization of the dataset
+**Exploratory visualization of the dataset**
 
 Before training the network on the data set, a quick visualization was done via "seaborn" library. A simple distribution plot along with a gaussian kernel density estimate is plotted to get an idea on how many images are available for each label. Shown below is the visualization. 
 
 ![alt text][image1]
 
-** Model Architecture - Design & Test
+**Model Architecture - Design & Test**
 
 The base architecture chosen to fit this data was the LeNet architecture shown below. http://yann.lecun.com/exdb/lenet/
 
@@ -58,7 +56,7 @@ An initial run of the training data set on the LeNet architecture resulted in va
 
 - As a first step, a simple normalization scheme was implemented to pre-process the images. The normalization routine chosen was:
 
-## X=(X/127.5)-1
+	X=(X/127.5)-1
 
 - The min and max pixel values are 0 and 255. The above equation would yield a min of -1 and max of +1 with mean of 0. Network training is a lot easier in such data sets
 
@@ -75,7 +73,7 @@ Despite the normalization scheme, validation accuracy did not go above 91%.
 - While drop-outs helped in avoiding overfitting, they also resulted in validation accuracy less than 93%
 - In order to avoid overfitting and have validation accuracy more than 93%, image augmentation techniques were used to generate more network training data
 
-** Image Augmentation:
+**Image Augmentation:**
 
 Three basic mechanisms were chosen for augmentation:
 
