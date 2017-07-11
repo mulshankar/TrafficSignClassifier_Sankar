@@ -14,8 +14,8 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/TrainDataVisualization.png "Visualization"
 [image2]: ./examples/lenet.png "LeNet Architecture"
-[image3]: ./examples/TrainVal_LossAccuracy.png "Training & Validation Loss/Accuracy"
-[image4]: ./examples/Augmentation.png "Augmentation Output"
+[image3]: ./examples/TrainVal_LossAccuracy.PNG "Training & Validation Loss/Accuracy"
+[image4]: ./examples/Augmentation.PNG "Augmentation Output"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
