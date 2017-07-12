@@ -120,7 +120,6 @@ The final model consisted of the following layers:
 | Fully connected		| Output=84  									|
 | Dropout				| keep_prob=0.8  								|
 | Fully connected		| Output=43  									|
-| Softmax				| etc.        									|
 
 **Model Training** 
 
@@ -140,7 +139,7 @@ The final model consisted of the following layers:
 
 **Model validation on new images obtained from Google**
 
-- While the above experiment was performed on the german traffic sign data set, it will be very interesting to evaluate model performance on new images obtained from just a simple google image search
+- While the above experiment was performed on the german traffic sign data set, it was interesting to evaluate model performance on new images obtained from just a simple google image search
 - The 5 images downloaded were sanitized to a format similar to training data i.e 32x32 pixels with R,G and B channels
 - The 5 traffic signs chosen for this test is shown below
 
@@ -165,7 +164,7 @@ Here are the results of the prediction:
 
 - Interestingly, the model identified No Entry, Bumpy Road and Speed Limit 80 km/hr signs accurately
 - Significant conclusions cannot be drawn from testing on just 5 images
-- It is interesting to note that the model confidence on predictions was fairly high despite the loss and accuracy curves showing no overfitting of the model
+- It was interesting to note that the model confidence on predictions was fairly high despite the loss and accuracy curves showing no overfitting of the model
 
 ![alt text][image7]
 
