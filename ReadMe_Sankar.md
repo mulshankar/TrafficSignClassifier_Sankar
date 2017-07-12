@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/Augmentation.PNG "Augmentation Output"
 [image5]: ./examples/TrainVal_LossAccuracy2.png "Training & Validation Loss/Accuracy Final"
 [image6]: ./examples/InternetImages.PNG "Traffic Signs from Google Image Search"
-[image7]: ./examples/SoftMaxPlot.PNG "SoftmaxPlot"
+[image7]: ./examples/SoftmaxPlot.PNG "SoftmaxPlot"
 [image8]: ./examples/Probabilities_Labels.PNG "Probabilities"
 
 ---
@@ -133,12 +133,12 @@ The final model consisted of the following layers:
 
 ![alt text][image5]
 
-- A distinct difference could be noticed between loss and accuracy curves between above result vs image shown before when model was overfitting
-- Also the training and validation accuracies are almost equal indicating that the model is not overfitting
+- A distinct difference could be noticed between loss and accuracy curves between above result vs image shown before when model was overfitting. The loss function is a nice monotonically decreasing curve as opposed to a jagged curve
+- Also the training and validation accuracies are almost equal with training accuracies even lower than validation accuracies indicating that the model is not overfitting
 - With validation accuracy about 95%, the model was tested on the test set
 - Test accuracy with the model was about 91%
 
-** Model validation on new images obtained from Google**
+**Model validation on new images obtained from Google**
 
 - While the above experiment was performed on the german traffic sign data set, it will be very interesting to evaluate model performance on new images obtained from just a simple google image search
 - The 5 images downloaded were sanitized to a format similar to training data i.e 32x32 pixels with R,G and B channels
@@ -152,49 +152,21 @@ The final model consisted of the following layers:
 
 ![alt text][image8]
 
+Here are the results of the prediction:
+
+| Image			        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| No Entry      		| No Entry   									| 
+| Pedestrians  			| General Caution								|
+| Turn Right			| Round About Mandatory							|
+| Bumpy Road      		| Bumpy Road					 				|
+| Speed Limit 80		| Speed Limit 80      							|
+
+
 - Interestingly, the model identified No Entry, Bumpy Road and Speed Limit 80 km/hr signs accurately
 - Significant conclusions cannot be drawn from testing on just 5 images
 - It is interesting to note that the model confidence on predictions was fairly high despite the loss and accuracy curves showing no overfitting of the model
 
 ![alt text][image7]
-
-
-
-
-
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
-
-Here are the results of the prediction:
-
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
-
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
-
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
-
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
 
