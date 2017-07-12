@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 
 ---
 
-Here is a link to the [project code](https://github.com/mulshankar/TrafficSignClassifier_Sankar/blob/master/TrafficSignClassifier_Sankar.ipynb)
+Here is a link to the [project code](https://github.com/mulshankar/TrafficSignClassifier_Sankar/blob/master/TrafficSignClassifier_Sankar_Rev2.ipynb)
 
 **Data Set Summary**
 
